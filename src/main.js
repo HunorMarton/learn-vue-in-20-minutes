@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import NewCard from './NewCard.vue'
 import './index.css'
 
-createApp(App).mount('#app')
+createApp(NewCard).mount('#app')
