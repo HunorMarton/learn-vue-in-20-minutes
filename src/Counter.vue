@@ -19,6 +19,7 @@ export default {
     <h3>{{counter}}</h3>
     <button @click="decrease">-</button>
     <button @click="increase">+</button>
+    <div v-if="counter < 0">Too low</div>
   </div>
 </template>
 
