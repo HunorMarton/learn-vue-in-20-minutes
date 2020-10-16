@@ -2,15 +2,23 @@
 export default {
   data: () => ({
     counter: 0
-  })
+  }),
+  methods: {
+    decrease() {
+      this.counter--
+    },
+    increase() {
+      this.counter++
+    }
+  }
 }
 </script>
 
 <template>
   <div className="Counter">
     <h3>{{counter}}</h3>
-    <button @click="counter--">-</button>
-    <button @click="counter++">+</button>
+    <button @click="decrease">-</button>
+    <button @click="increase">+</button>
   </div>
 </template>
 
@@ -22,11 +30,12 @@ export default {
   display: inline-block;
   padding: 5px 20px;
   text-align: center;
+  height: 110px;
+  width: 100px;
 }
 
 .Counter button {
   height: 30px;
   width: 30px;
 }
-
 </style>
