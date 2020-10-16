@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import Counter from './Counter.vue'
 import './index.css'
 
-createApp(App).mount('#app')
+createApp(Counter).mount('#app')
