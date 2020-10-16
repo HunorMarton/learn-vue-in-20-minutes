@@ -1,0 +1,24 @@
+<template>
+  <div>
+    <h3>Rick & Morty</h3>
+    <p>Animation</p>
+  </div>
+</template>
+
+<style scoped>
+div {
+  background-color: #ED7063;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  display: inline-block;
+  margin: 0 20px 20px 0;
+  padding: 5px 30px;
+  width: 200px;
+}
+
+p {
+  font-family: 'Fira Code';
+  opacity: 0.6;
+}
+</style>
