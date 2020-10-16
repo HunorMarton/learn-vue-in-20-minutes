@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <h2>Cards</h2>
-  <Card />
-  <Card />
+  <h2>TV Shows</h2>
+  <Card title="Rick & Morty" genre="Animation" />
+  <Card title="Peaky Blinders" genre="Drama"  />
 </template>
