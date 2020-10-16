@@ -1,7 +1,16 @@
+<script>
+export default {
+  props: {
+    title: String,
+    genre: String
+  }
+}
+</script>
+
 <template>
   <div class="Card">
-    <h3>Rick & Morty</h3>
-    <p>Animation</p>
+    <h3>{{title}}</h3>
+    <p>{{genre}}</p>
   </div>
 </template>
 

@@ -10,6 +10,6 @@ export default {
 
 <template>
   <h2>Cards</h2>
-  <Card />
-  <Card />
+  <Card title="Rick & Morty" genre="Animation" />
+  <Card title="Peaky Blinders" genre="Drama"  />
 </template>
