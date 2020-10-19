@@ -15,27 +15,27 @@ export default {
 </script>
 
 <template>
-  <div className="Counter">
-    <h3>{{counter}}</h3>
+  <div>
+    <h3 :style="{ color: (counter < 0 ? '#1F271B' : 'white') }">
+      {{counter}}
+    </h3>
     <button @click="decrease">-</button>
     <button @click="increase">+</button>
-    <div v-if="counter < 0">Too low</div>
   </div>
 </template>
 
 <style scoped>
-.Counter {
-  background-color: #ffffff;
+div {
+  background-color: #ED7063;
   border-radius: 10px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: inline-block;
-  padding: 5px 20px;
+  padding: 10px 15px 20px 15px;
   text-align: center;
-  height: 110px;
   width: 100px;
 }
 
-.Counter button {
+button {
   height: 30px;
   width: 30px;
 }
