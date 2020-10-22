@@ -10,20 +10,16 @@ export default {
     increase() {
       this.counter++
     }
-  },
-  computed: {
-    headerStyle() {
-      return { color: this.counter < 0 ? '#1F271B' : 'white' }
-    }
   }
 }
 </script>
 
 <template>
   <div>
-    <h3 :style="headerStyle">
+    <h3>
       {{counter}}
     </h3>
+    <p v-if="counter < 0">Too low</p>
     <button @click="decrease">-</button>
     <button @click="increase">+</button>
   </div>
@@ -34,6 +30,7 @@ div {
   background-color: #ED7063;
   border-radius: 10px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
   display: inline-block;
   padding: 10px 15px 20px 15px;
   text-align: center;
