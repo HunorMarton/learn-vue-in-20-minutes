@@ -10,13 +10,18 @@ export default {
     increase() {
       this.counter++
     }
+  },
+  computed: {
+    headerStyle() {
+      return { color: this.counter < 0 ? '#1F271B' : 'white' }
+    }
   }
 }
 </script>
 
 <template>
   <div>
-    <h3 :style="{ color: (counter < 0 ? '#1F271B' : 'white') }">
+    <h3 :style="headerStyle">
       {{counter}}
     </h3>
     <button @click="decrease">-</button>
