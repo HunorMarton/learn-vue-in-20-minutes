@@ -14,15 +14,12 @@ export default {
 }
 </script>
 
-<template>
-  <div>
-    <h3>
-      {{counter}}
-    </h3>
-    <p v-if="counter < 0">Too low</p>
-    <button @click="decrease">-</button>
-    <button @click="increase">+</button>
-  </div>
+<template lang="pug">
+div
+  h3 {{counter}}
+  p(v-if="counter < 0") Too low
+  button(@click="decrease") -
+  button(@click="increase") +
 </template>
 
 <style scoped>
